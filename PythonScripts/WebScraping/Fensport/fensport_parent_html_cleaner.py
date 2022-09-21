@@ -1,10 +1,6 @@
-# This program prints Hello, world!
-
 import os
 import sys
-import re
 import uuid
-from xml.dom.minidom import Identified
 from bs4 import BeautifulSoup
 from requests import get
 sys.path.insert(0, 'PythonScripts\\Extensions')
