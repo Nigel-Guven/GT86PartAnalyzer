@@ -1,16 +1,17 @@
 # This program prints Hello, world!
 
 import os
+import sys
 import re
 import uuid
 from xml.dom.minidom import Identified
 from bs4 import BeautifulSoup
 from requests import get
-
+sys.path.insert(0, 'PythonScripts\\Extensions')
 
 try:
-    import PythonScripts.Extensions.Exceptions as exceptions 
-    import PythonScripts.HTMLCleaning.scriptfunctions as functions
+    import Exceptions as exceptions 
+    import ScriptFunctions as functions
 except ModuleNotFoundError:
     current_working_directory = os.getcwd()
     print(current_working_directory)
@@ -18,13 +19,12 @@ except ModuleNotFoundError:
 def main():
     
     print('\n---------------------------------------------------------')
-    #Go to Raw HTML directory
 
     try:
         current_working_directory = os.getcwd()
         print(current_working_directory)
-        raw_html_directory = r'Python\\HTML\\RawHTML\\FenSport'
-        processed_html_directory = r'Python\\HTML\\ProcessedHTML'
+        raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\FenSport'
+        processed_html_directory = r'PythonScripts\\HTML\\ProcessedHTML'
 
         if not os.path.exists(raw_html_directory):
             os.makedirs(raw_html_directory)
@@ -38,9 +38,6 @@ def main():
         
     # Parse Directory HTML Files
 
-
-    
-
     for path in os.listdir(os.getcwd()):
         if(os.path.isfile(path)):
             tmpFile = open(
@@ -53,12 +50,13 @@ def main():
 
             # Full Product Description
             product_view = soup.find_all("a", class_="product-card")
-            product_view = PythonScripts.HTMLCleaning.scriptfunctions.functions.remove_html_markup(product_view)
+            product_view = functions.remove_html_markup(str(product_view))
 
             # Product Description Link
             product_description_link = soup.find_all("a", class_="product-card")
+            #product_description_link = functions.remove_html_markup(str(product_description_link))
 
-            print(product_view)
+            print(product_description_link)
             
 
 

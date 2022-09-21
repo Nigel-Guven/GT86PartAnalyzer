@@ -5,7 +5,7 @@ import uuid
 from bs4 import BeautifulSoup
 from requests import get
 
-from Python.Extensions.Exceptions import FilePathNotCorrectException, HTTPAccessDeniedException, HTTPFaultException
+from PythonScripts.Extensions.Exceptions import FilePathNotCorrectException, HTTPAccessDeniedException, HTTPFaultException
 
 def main():
 
@@ -14,7 +14,7 @@ def main():
     try:
         current_working_directory = os.getcwd()
         print(current_working_directory)
-        raw_html_directory = r'Python\\HTML\\RawHTML\\FenSport'
+        raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\FenSport'
 
         if not os.path.exists(raw_html_directory):
             os.makedirs(raw_html_directory)

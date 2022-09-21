@@ -19,7 +19,7 @@ def main():
     try:
         current_working_directory = os.getcwd()
         print(current_working_directory)
-        raw_html_directory = r'Python\\HTML\\RawHTML\\TRCTuning'
+        raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\DriftShop'
 
         if not os.path.exists(raw_html_directory):
             os.makedirs(raw_html_directory)
@@ -42,7 +42,7 @@ def main():
 
     # Web Scrape
 
-    page_url = 'https://www.trc-tuning.com/TOYOTA-Tuning/GT86-FRS-BRZ-Tuning/GT86-FR-S-BRZ-Tuning/?view_mode=tiled&listing_sort=&listing_count=600'
+    page_url = 'https://www.driftshop.com/my-car/gt86-toyota-subaru-brz.html'
 
     response = get(page_url, headers = user_agent_headers)
     

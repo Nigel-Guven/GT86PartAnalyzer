@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from requests import get
 
 try:
-    import Python.Extensions.Exceptions as exceptions 
+    import PythonScripts.Extensions.Exceptions as exceptions 
 except ModuleNotFoundError:
     current_working_directory = os.getcwd()
     print(current_working_directory)
@@ -19,7 +19,7 @@ def main():
     try:
         current_working_directory = os.getcwd()
         print(current_working_directory)
-        raw_html_directory = r'Python\\HTML\\RawHTML\\DriftShop'
+        raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\TRCTuning'
 
         if not os.path.exists(raw_html_directory):
             os.makedirs(raw_html_directory)
@@ -42,7 +42,7 @@ def main():
 
     # Web Scrape
 
-    page_url = 'https://www.driftshop.com/my-car/gt86-toyota-subaru-brz.html'
+    page_url = 'https://www.trc-tuning.com/TOYOTA-Tuning/GT86-FRS-BRZ-Tuning/GT86-FR-S-BRZ-Tuning/?view_mode=tiled&listing_sort=&listing_count=600'
 
     response = get(page_url, headers = user_agent_headers)
     

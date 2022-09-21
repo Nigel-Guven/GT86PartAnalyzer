@@ -9,7 +9,7 @@ class HTTPAccessDeniedException(Error):
     """Website returned an error when retrieving html data. Error received for ${response}""" 
     pass
 
-class HTTPFaultException(response):
+class HTTPFaultException(Error):
     """Website returned an error when retrieving html data. Error received for ${response}""" 
     pass
 
