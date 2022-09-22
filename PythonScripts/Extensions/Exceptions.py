@@ -1,5 +1,3 @@
-from urllib import response
-
 # define Python user-defined exceptions
 class Error(Exception):
     """Base class for other exceptions"""

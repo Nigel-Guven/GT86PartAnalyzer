@@ -1,8 +1,7 @@
 import os
 import sys
-import uuid
+import csv
 from bs4 import BeautifulSoup
-from requests import get
 sys.path.insert(0, 'PythonScripts\\Extensions')
 
 try:
@@ -32,7 +31,7 @@ def main():
     except FileNotFoundError:
         raise exceptions.FilePathNotCorrectException(raw_html_directory)       
         
-    # Parse Directory HTML Files
+# Parse Directory HTML Files
 
     for path in os.listdir(os.getcwd()):
         if(os.path.isfile(path)):
@@ -41,50 +40,75 @@ def main():
                 "r",
                 encoding="utf-8"
             )
-            print(str(tmpFile))
+
             soup = BeautifulSoup(tmpFile, 'html.parser')
 
-            # Full Product Description
-            product_view = soup.find_all("a", class_="product-card")
-            product_view = functions.remove_html_markup(str(product_view))
+            
+            dirty_product_title = str(soup.find_all("meta", property="og:title"))                       # All have names 
+            dirty_product_price = str(soup.find_all("meta", property="og:price:amount"))                # All have prices
+            dirty_product_description = str(soup.find_all("div", id="tab-1"))                           # All have description - needs to cleaned
+            dirty_product_notes = str(soup.find_all("div", id="tab-3"))                                 # All have notes - needs to be cleaned
+            dirty_product_in_stock = str(soup.find_all("b", string='Stock status:'))     # Needs Customisation
 
-            # Product Description Link
-            product_description_link = soup.find_all("a", class_="product-card")
-            #product_description_link = functions.remove_html_markup(str(product_description_link))
-
-            print(product_description_link)
+            if dirty_product_in_stock is None:
+                dirty_product_in_stock = str(soup.find_all("b", string='Stock status:'))
             
 
 
+            clean_product_title = dirty_product_title.replace("[<meta content=\"", "").replace("&amp;", "&").replace("\" property=\"og:title\"/>]","").strip()
+            clean_product_price = dirty_product_price.replace("[<meta content=\"", "").replace("\" property=\"og:price:amount\"/>]","").strip()
 
-        
-        
             
+            clean_product_description = dirty_product_description
+            clean_product_notes = dirty_product_notes.replace("[<div id=\"tab-3\">","").replace("]","").split()
+            clean_product_in_stock = dirty_product_in_stock
 
 
+            clean_product_supplier = str("FenSport")
 
+            if str(dirty_product_title).__contains__("Crankshaft Main Bearing Set"):
+                print('\n---------------------------------------------------------')
+                print(tmpFile)
+                print(str(clean_product_title))
+                print('\n---------------------------------------------------------')
+                print(str(clean_product_price))
+                print('\n---------------------------------------------------------')
+                print(str(clean_product_description))
+                print('\n---------------------------------------------------------')
+                print(str(clean_product_notes))
+                print('\n---------------------------------------------------------')
+                print(str(dirty_product_in_stock))
+                print('\n---------------------------------------------------------')
+                print(str(clean_product_supplier))
+                print('\n---------------------------------------------------------')
+                print('\n---------------------------------------------------------')
+                print('\n---------------------------------------------------------')
+                print('\n---------------------------------------------------------')
+                print('\n---------------------------------------------------------')
+                print('\n---------------------------------------------------------')
+
+            
+            
+            # Create File Name Parameters
+            
+            """
+            file_name = "fensport_content.html"      
+            print(str(file_name))
+
+            header = ['name', 'area', 'country_code2', 'country_code3']
+            data = ['Afghanistan', 652090, 'AF', 'AFG']
     
+            # Open new file and fill contents
+            
+            f = open(
+                processed_html_directory + file_name, 
+                "w", 
+                encoding = "utf-8")
 
-    # Create File Name Parameters
-    """
-    newGuid = str(uuid.uuid4())
-    file_name = "clean_fensport_content_" + newGuid + ".html"      
-    print(str(file_name))
-
-
-    
-    
-    # Open new file and fill contents
-    
-    f = open(
-        file_name, 
-        "w", 
-        encoding = "utf-8")
-
-    f.write(url_soup)
-    f.close()
-    """
-    print('\n---------------------------------------------------------')
-    
+            f.write(url_soup)
+            f.close()
+            """
+            
+ 
 if __name__=="__main__":
 	main()
