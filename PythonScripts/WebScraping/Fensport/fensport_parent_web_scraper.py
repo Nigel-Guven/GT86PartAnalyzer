@@ -7,7 +7,7 @@ print(os.getcwd())
 sys.path.append(os.getcwd())
 sys.path.append('PythonScripts/Extensions/Exceptions')
 
-from PythonScripts.Extensions.Exceptions import FilePathNotCorrectException, HTTPAccessDeniedException, HTTPFaultException
+from ExceptionsEx import FilePathNotCorrectException, HTTPAccessDeniedException, HTTPFaultException
 
 def main():
 

@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from requests import get
 
 try:
-    import PythonScripts.Extensions.Exceptions as exceptions 
+    import ExceptionsEx as exceptions 
 except ModuleNotFoundError:
     current_working_directory = os.getcwd()
     print(current_working_directory)
