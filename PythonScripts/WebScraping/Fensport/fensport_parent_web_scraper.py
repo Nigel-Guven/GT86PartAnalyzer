@@ -10,26 +10,25 @@ import SupportFunctionsEx as supportFuncs
 
 def main():
 
+# Global Variables
+ 
+    user_agent_headers = {"User-Agent":"Mozilla/5.0"}
+    index = 1
+    clean_product_supplier = "FenSport"
+    raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\' + clean_product_supplier
+    
 # Check that files are being outputted to the correct directory
 
     try:
         supportFuncs.getCurrentPath()
-        raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\FenSport'
         supportFuncs.createDirectoryIfNotExists(raw_html_directory)
         supportFuncs.switchToRawPath(raw_html_directory)
     except FileNotFoundError:
         raise exceptionsEx.FilePathNotCorrectException(raw_html_directory)
 
-# Global Variables
- 
-    user_agent_headers = {"User-Agent":"Mozilla/5.0"}
-    index = 1
-
+# Web Scrape
     while index < 35:
-
-# Create File Name Parameters
-
-        # Web Scrape
+        
         page_header = 'https://www.fensport.co.uk'
         page_stem = '/collections/toyota-gt86-2012-to-2016?page=' + str(index)
 
