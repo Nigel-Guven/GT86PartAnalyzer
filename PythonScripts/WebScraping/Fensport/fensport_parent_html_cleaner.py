@@ -129,6 +129,8 @@ def checkForRemnantHTML(text):
 def checkForBadData(text): 
     if text.__contains__('#NAME'):
         return "No notes available"
+    elif text.__contains__(''):
+        return "No notes available"
     else:
         return text
  
