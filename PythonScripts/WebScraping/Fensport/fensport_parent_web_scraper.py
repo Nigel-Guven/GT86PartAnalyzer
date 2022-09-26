@@ -3,29 +3,23 @@ import sys
 import uuid
 from bs4 import BeautifulSoup
 from requests import get
-print(os.getcwd())
-sys.path.append(os.getcwd())
-sys.path.append('PythonScripts/Extensions/Exceptions')
+sys.path.insert(0, 'PythonScripts\\Extensions')
 
-from ExceptionsEx import FilePathNotCorrectException, HTTPAccessDeniedException, HTTPFaultException
+import ExceptionsEx as exceptionsEx
+import SupportFunctionsEx as supportFuncs
 
 def main():
 
 # Check that files are being outputted to the correct directory
 
     try:
-        current_working_directory = os.getcwd()
-        print(current_working_directory)
+        supportFuncs.getCurrentPath()
         raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\FenSport'
-
-        if not os.path.exists(raw_html_directory):
-            os.makedirs(raw_html_directory)
-
-        os.chdir(raw_html_directory)
+        supportFuncs.createDirectoryIfNotExists(raw_html_directory)
+        supportFuncs.switchToRawPath(raw_html_directory)
     except FileNotFoundError:
-        raise FilePathNotCorrectException(raw_html_directory)
-        
-        
+        raise exceptionsEx.FilePathNotCorrectException(raw_html_directory)
+
 # Global Variables
  
     user_agent_headers = {"User-Agent":"Mozilla/5.0"}
@@ -66,10 +60,10 @@ def main():
                     f.close()
                     
         else:
-            raise HTTPFaultException(response.status_code)
+            raise exceptionsEx.HTTPFaultException(response.status_code)
 
         if 'Access Denied' in parent_url_soup:
-            raise HTTPAccessDeniedException(response.status_code)
+            raise exceptionsEx.HTTPAccessDeniedException(response.status_code)
 
         index += 1
 
