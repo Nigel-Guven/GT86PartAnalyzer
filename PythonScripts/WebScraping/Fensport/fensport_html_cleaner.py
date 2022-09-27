@@ -1,7 +1,6 @@
 import os
 import sys
 import csv
-import unicodedata
 
 from bs4 import BeautifulSoup
 
@@ -12,7 +11,7 @@ try:
     import WebScrapingEx as scrapeFuncs
     import SupportFunctionsEx as supportFuncs
 except ModuleNotFoundError:
-    current_working_directory = os.getcwd()
+    os.getcwd()
 
 def main():
 

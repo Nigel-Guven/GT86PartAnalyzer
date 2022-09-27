@@ -21,4 +21,7 @@ def formatPrice(price):
     price = price.strip().replace(',','')
     return "{:.{}f}".format(float(price), 2)
 
+def isBlank(text):
+    return not (text and text.strip())
+
 
