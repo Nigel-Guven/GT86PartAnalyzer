@@ -13,6 +13,10 @@ def switchToProcessedPath(new_path):
     os.chdir(new_path)
     getCurrentPath()
 
+def switchToRootPath():
+    os.chdir("..\\..\\..\\..")
+    getCurrentPath()
+
 def createDirectoryIfNotExists(new_path):
     if not os.path.exists(new_path):
             os.makedirs(new_path)
