@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3648fb90-674c-425f-9e45-9e4c51f98c3f": {
+      "ProjectGuid": "3648fb90-674c-425f-9e45-9e4c51f98c3f",
+      "DisplayName": "GT86Application",
+      "ColorIndex": 0
+    },
+    "8c26d462-73e7-4568-87cb-3f8d6fe43511": {
+      "ProjectGuid": "8c26d462-73e7-4568-87cb-3f8d6fe43511",
+      "DisplayName": "GT86DB",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

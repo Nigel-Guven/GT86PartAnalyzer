@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GT86DB", "GT86DB.sqlproj", "{8C26D462-73E7-4568-87CB-3F8D6FE43511}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT86Application", "..\GT86Application\GT86Application.csproj", "{3648FB90-674C-425F-9E45-9E4C51F98C3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GT86Application", "..\GT86Application\GT86Application.csproj", "{3648FB90-674C-425F-9E45-9E4C51F98C3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT86Domain", "..\Domain\GT86Domain.csproj", "{05CC6CD1-C1AB-42A3-A863-DAE4B8D6A894}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{3648FB90-674C-425F-9E45-9E4C51F98C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3648FB90-674C-425F-9E45-9E4C51F98C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3648FB90-674C-425F-9E45-9E4C51F98C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05CC6CD1-C1AB-42A3-A863-DAE4B8D6A894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05CC6CD1-C1AB-42A3-A863-DAE4B8D6A894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05CC6CD1-C1AB-42A3-A863-DAE4B8D6A894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05CC6CD1-C1AB-42A3-A863-DAE4B8D6A894}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
