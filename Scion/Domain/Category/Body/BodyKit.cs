@@ -8,18 +8,45 @@ namespace GT86Domain.Category.Body
 {
     public class BodyKit
     {
-        public string Rear_Diffuser => "Rear Diffuser";
-        public string Front_Canards => "Front Canards";
-        public string Rear_Canards => "Rear Canards";
+        /*
+         * 
+         * Kits
+         * 
+         */
         public string Side_Skirt_Kit => "Side Skirt Kit";
+
+        /*
+         * 
+         * Body Parts
+         * 
+         */
+        public string Front_Splitter => "Front Splitter";
         public string Side_Skirts => "Side Skirts";
-        public string Roof_Cover => "Roof Cover";
+        public string Rear_Diffuser => "Rear Diffuser";
+        public string Front_Bumper => "Front_Bumper";
+        public string Rear_Bumper => "Rear Bumper";
+        public string Rear_Spats => "Rear Spats";
+        public string Boot_Lid => "Boot Lid";
+        public string Bonnet => "Bonnet";
+        public string Roof => "Roof";
+
+        /*
+         * 
+         * Spoilers
+         * 
+         */
         public string Wing => "Wing";
         public string Ducktail => "Ducktail";
-        public string Front_Wheel_Arches => "Front Wheel Arches";
-        public string Rear_Wheel_Arches => "Rear Wheel Arches";
-        public string Wide_Body_Kit => "Wide Body Kit";
-        public string Front_Bumper => "Front_Bumper";
-        public string Rear_Bumper => "Front_Bumper";
+        public string Roof_Spoiler => "Roof Spoiler";
+
+        /*
+         * 
+         * Aero
+         * 
+         */
+        public string Rear_Aero_Stabilising_Cover => "Rear Aero Stabilising Cover";
+        public string Side_Aero_Stabilising_Covers => "Side Aero Stabilising Covers";
+        public string Front_Canards => "Front Canards";
+        public string Rear_Canards => "Rear Canards";
     }
 }

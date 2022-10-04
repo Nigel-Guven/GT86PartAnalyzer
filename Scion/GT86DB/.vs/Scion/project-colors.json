@@ -10,7 +10,12 @@
       "ProjectGuid": "8c26d462-73e7-4568-87cb-3f8d6fe43511",
       "DisplayName": "GT86DB",
       "ColorIndex": 1
+    },
+    "05cc6cd1-c1ab-42a3-a863-dae4b8d6a894": {
+      "ProjectGuid": "05cc6cd1-c1ab-42a3-a863-dae4b8d6a894",
+      "DisplayName": "GT86Domain",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

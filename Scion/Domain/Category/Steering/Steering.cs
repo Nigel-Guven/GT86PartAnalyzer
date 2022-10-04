@@ -8,6 +8,29 @@ namespace GT86Domain.Category.Steering
 {
     public class Steering
     {
-        public string Steering_Rack => "Steering Rack";
+        /*
+         *
+         * Kits
+         *
+         */     
+        public string Steering_Adjustment_Kit => "Steering_Adjustment_Kit";
+        public string Steering_Bushings_Kit => "Steering Bushings Kit";
+
+        /*
+         *
+         * Steering System
+         *
+         */
+        public string Steering_Rack => "Steering Rack";     
+        public string Steering_Rack_Mounts => "Steering Rack Mounts";
+        public string Angle_Lock_Kit => "Angle Lock Kit";
+
+        /*
+         *
+         * Steering Wheel
+         *
+         */
+        public string Steering_Wheel => "Steering Wheel";
+        public string Boss_Kit => "Boss Kit";
     }
 }
