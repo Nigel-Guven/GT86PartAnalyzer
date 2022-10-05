@@ -1,1 +1,1 @@
-﻿SELECT * FROM
+﻿SELECT * FROM GT86DB.dbo.supplier
