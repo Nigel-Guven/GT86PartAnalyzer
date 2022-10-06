@@ -35,7 +35,8 @@ namespace GT86Domain.Category.Body
          * Spoilers
          * 
          */
-        public string Wing => "Wing";
+        public string GT_Wing => "GT Wing";
+        public string Low_Wing => "Low Wing";
         public string Ducktail => "Ducktail";
         public string Roof_Spoiler => "Roof Spoiler";
 
@@ -44,8 +45,7 @@ namespace GT86Domain.Category.Body
          * Aero
          * 
          */
-        public string Rear_Aero_Stabilising_Cover => "Rear Aero Stabilising Cover";
-        public string Side_Aero_Stabilising_Covers => "Side Aero Stabilising Covers";
+        public string Aero_Stabilising_Cover => "Rear Aero Stabilising Cover";
         public string Front_Canards => "Front Canards";
         public string Rear_Canards => "Rear Canards";
     }

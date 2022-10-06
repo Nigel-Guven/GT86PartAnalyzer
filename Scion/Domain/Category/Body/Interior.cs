@@ -15,6 +15,8 @@ namespace GT86Domain.Category.Body
          */
         public string Seat => "Seat";
         public string Seat_Rail => "Seat Rail";
+        public string Seat_Rail_Support_Bar => "Seat Rail Support Bar";
+        public string Rear_Seat_Delete_Panel => "Rear Seat Delete Panel";
 
         /*
          * 
@@ -30,11 +32,12 @@ namespace GT86Domain.Category.Body
          * Trims
          * 
          */
-        public string Steering_Wheel_Trim => "Steering Wheel Trim";
         public string Ignition_Button_Ring => "Ignition_Button_Ring";
         public string Carbon_Fibre_Centre_Console => "Carbon Fibre Centre Console";
         public string Centre_Console_Trim => "Centre Console Trim";
         public string Centre_Panel_Trim => "Centre Panel Trim";
+        public string Gear_Shifter_Trim => "Gear Shifter Trim";
+
 
         /*
          * 

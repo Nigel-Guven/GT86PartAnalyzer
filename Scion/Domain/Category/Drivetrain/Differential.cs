@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GT86Domain.Category.Transmission
+namespace GT86Domain.Category.Drivetrain
 {
     public class Differential
     {
@@ -14,8 +14,10 @@ namespace GT86Domain.Category.Transmission
          *
          */
         public string Differential_Kit => "Differential Kit";
-        public string Differential_Bushings_Kit => "Differential Bushings Kit";
+        public string Front_Differential_Bushings_Kit => "Front Differential Bushings Kit";
+        public string Rear_Differential_Bushings_Kit => "Differential Bushings Kit";
         public string Differential_Pinion_Kit => "Differential Pinion Kit";
+        public string Differential_Bushings_Insert_Kit => "Rear Differential Bushings Insert Kit";
 
         /*
          *

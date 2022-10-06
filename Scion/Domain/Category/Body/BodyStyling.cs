@@ -35,6 +35,7 @@ namespace GT86Domain.Category.Body
          */
         public string Antenna => "Antenna";
         public string Tow_Hook => "Tow Hook";
+        public string Tow_Strap => "Tow Strap";
         public string Bicycle_Rack => "Bicycle Rack";
         public string Fuel_Cap => "Fuel Cap";
         public string Licence_Plate => "Licence_Plate";

@@ -32,5 +32,12 @@ namespace GT86Domain.Category.Steering
          */
         public string Steering_Wheel => "Steering Wheel";
         public string Boss_Kit => "Boss Kit";
+
+        /*
+         *
+         * Trims
+         *
+         */
+        public string Steering_Wheel_Trim => "Steering Wheel Trim";
     }
 }

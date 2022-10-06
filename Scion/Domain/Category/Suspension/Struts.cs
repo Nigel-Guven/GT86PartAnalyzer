@@ -13,21 +13,17 @@ namespace GT86Domain.Category.Suspension
          * Kits
          *
          */
-        
-        public string Rear_Suspension_Kit => "Rear Suspension Kit";
-        public string Front_Suspension_Kit => "Front Suspension Kit";
         public string Coilover_Kit => "Coilover Kit";
+        public string Shock_Absorber => "Shock Absorber Kit";
 
         /*
          *
          * Strut Parts
          *
          */
+        public string Lowering_Springs => "Lowering Springs";
         public string Front_Top_Hat => "Front Top Hat";
         public string Rear_Top_Hat => "Rear Top Hat";
-        public string Shock_Absorber => "Shock Absorber";
-        public string Lowering_Springs => "Lowering Springs";
-        public string Coilovers => "Coilovers";
 
         /*
          *
@@ -35,7 +31,9 @@ namespace GT86Domain.Category.Suspension
          *
          */
         public string Damping_Controller => "Damping Controller";
+        public string Damping_Controller_Mount_Kit => "Damping Controller Mount Kit";
         public string Damping_Controller_Motor => "Damping Controller Motor";
+        public string Damping_Controller_GPS_Kit => "Damping Controller GPS Kit";
 
         /*
          *

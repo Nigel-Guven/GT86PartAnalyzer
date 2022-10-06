@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GT86Domain.Category.AirIntake
+namespace GT86Domain.Category.Engine
 {
     public class AirIntake
     {
