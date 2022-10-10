@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Supplier\" />
+    <Folder Include="Keywords\Manufacturer\" />
+    <Folder Include="Keywords\Products\" />
   </ItemGroup>
 
 </Project>

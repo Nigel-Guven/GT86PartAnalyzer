@@ -1,0 +1,8 @@
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\bin\Debug\GT86Service.exe.config
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\bin\Debug\GT86Service.exe
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\bin\Debug\GT86Service.pdb
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\obj\Debug\GT86Service.csproj.AssemblyReference.cache
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\obj\Debug\GT86Service.csproj.SuggestedBindingRedirects.cache
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\obj\Debug\GT86Service.csproj.CoreCompileInputs.cache
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\obj\Debug\GT86Service.exe
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Service\obj\Debug\GT86Service.pdb
