@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Braking
+﻿namespace GT86Domain.Fields
 {
     public class BrakeAssembly
     {
@@ -22,7 +16,7 @@ namespace GT86Domain.Category.Braking
          *
          */
         public string Front_Brake_Pads => "Front Brake Pads";
-        public string Rear_Brake_Pads => "Rear Brake Pads";     
+        public string Rear_Brake_Pads => "Rear Brake Pads";
         public string Rear_Brake_Discs => "Rear Brake Discs";
         public string Front_Brake_Discs => "Front Brake Discs";
         public string Rear_Left_Brake_Caliper => "Rear Left Brake Caliper";

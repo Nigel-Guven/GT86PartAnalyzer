@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Body
+﻿namespace GT86Domain.Fields
 {
     public class Doors
     {
@@ -15,9 +9,9 @@ namespace GT86Domain.Category.Body
          */
         public string Aftermarket_Doors => "Aftermarket_Doors";
         public string Vertical_Door_Kit => "Vertical Door Kit";
-        
+
         public string Door_Stabiliser_Kit => "Door Stabiliser Kit";
-        
+
 
         /*
          * 

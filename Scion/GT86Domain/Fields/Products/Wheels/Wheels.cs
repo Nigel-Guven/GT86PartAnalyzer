@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Wheels
+﻿namespace GT86Domain.Fields
 {
     public class Wheels
     {
@@ -24,7 +18,7 @@ namespace GT86Domain.Category.Wheels
          *
          */
         public string Rear_Wheel_Bearing => "Rear Wheel Bearing";
-        public string Front_Wheel_Bearing => "Front Wheel Bearing";       
+        public string Front_Wheel_Bearing => "Front Wheel Bearing";
         public string Front_Wheel_Hub => "Front_Wheel_Hub";
         public string Rear_Wheel_Hub => "Rear_Wheel_Hub";
         public string Wheel_Studs => "Wheel Studs";

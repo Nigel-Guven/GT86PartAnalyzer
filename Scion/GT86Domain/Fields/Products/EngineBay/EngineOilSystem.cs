@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Engine
+﻿namespace GT86Domain.Fields
 {
     public class EngineOilSystem
     {
@@ -16,7 +10,7 @@ namespace GT86Domain.Category.Engine
         public string Engine_Oil_Plug_Gasket => "Drain Plug Gasket";
         public string Engine_Oil_Plug => "Drain Plug";
         public string Oil_Filler_Cap => "Oil Filler Cap";
-        
+
         /*
          * 
          * Engine Oil System
@@ -35,9 +29,9 @@ namespace GT86Domain.Category.Engine
          * Oil Monitoring
          * 
          */
-        public string Oil_Pressure_Switch => "Oil Pressure Switch";        
+        public string Oil_Pressure_Switch => "Oil Pressure Switch";
         public string Oil_Control_Valve => "Oil Control Valve";
-        
-        
+
+
     }
 }

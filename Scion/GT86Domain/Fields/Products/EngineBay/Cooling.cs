@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Engine
+﻿namespace GT86Domain.Fields
 {
     public class Cooling
     {
@@ -13,7 +7,7 @@ namespace GT86Domain.Category.Engine
          * Kits
          * 
          */
-        public string Water_Injection_Kit => "Water Injection Kit";   
+        public string Water_Injection_Kit => "Water Injection Kit";
         public string Oil_Cooler_Kit => "Oil Cooler Kit";
         public string Radiator_Hose_Kit => "Radiator_Hose_Kit";
 
@@ -27,7 +21,7 @@ namespace GT86Domain.Category.Engine
         public string Radiator_Cap => "Radiator Cap";
         public string Fan => "Fan";
         public string Fan_Shroud => "Fan Shroud";
-        
+
         /*
          * 
          * Temperature Sensors

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Chassis
+﻿namespace GT86Domain.Fields
 {
     public class ArmsBars
     {
@@ -30,7 +24,7 @@ namespace GT86Domain.Category.Chassis
          */
         public string Front_Anti_Roll_Bar_Links => "Front Anti-Roll Bar Links";
         public string Rear_Anti_Roll_Bar_Links => "Rear Anti-Roll Bar Links";
-        
+
         /*
          * 
          * Modifications

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Engine
+﻿namespace GT86Domain.Fields
 {
     public class EngineFuelSystem
     {
@@ -28,9 +22,9 @@ namespace GT86Domain.Category.Engine
          * 
          * Fuel Tank
          * 
-         */    
+         */
         public string Fuel_Bucket_Assembly => "Fuel Tank Assembly";
-        
+
 
     }
 }

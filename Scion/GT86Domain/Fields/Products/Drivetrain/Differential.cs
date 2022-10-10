@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Drivetrain
+﻿namespace GT86Domain.Fields
 {
     public class Differential
     {
@@ -33,7 +27,7 @@ namespace GT86Domain.Category.Drivetrain
          *
          * Driveshaft
          *
-         */     
+         */
         public string Driveshaft => "Driveshaft";
 
     }

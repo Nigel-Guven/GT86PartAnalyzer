@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Drivetrain
+﻿namespace GT86Domain.Fields
 {
     public class Gearbox
     {
@@ -37,7 +31,7 @@ namespace GT86Domain.Category.Drivetrain
          */
         public string Manual_Gearbox => "Manual Gearbox";
         public string Automatic_Gearbox => "Automatic Gearbox";
-        public string Sequential_Gearbox => "Sequential Gearbox";    
+        public string Sequential_Gearbox => "Sequential Gearbox";
         public string Gearbox_Mount => "Gearbox Mount";
         public string Gearbox_Mount_Insert => "Gearbox Mount Insert";
         public string Gearbox_Cushion => "Gearbox Cushion";

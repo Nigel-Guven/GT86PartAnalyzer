@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Engine
+﻿namespace GT86Domain.Fields
 {
     public class ForcedInduction
     {
@@ -31,7 +25,7 @@ namespace GT86Domain.Category.Engine
          * 
          * Valves
          * 
-         */     
+         */
         public string Dump_Valve => "Dump Valve";
         public string Boost_Valve => "Boost Valve";
     }

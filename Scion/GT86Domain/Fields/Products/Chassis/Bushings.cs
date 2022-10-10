@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GT86Domain.Category.Chassis
+﻿namespace GT86Domain.Fields
 {
     public class Bushings
     {
@@ -31,7 +25,7 @@ namespace GT86Domain.Category.Chassis
          * Undercarriage
          *
          */
-        public string Subframe_Bushings_Kit => "Subframe Bushings Kit";      
+        public string Subframe_Bushings_Kit => "Subframe Bushings Kit";
         public string Rear_Subframe_Bush_Inserts => "Rear Subframe Bush Inserts";
 
     }
