@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GT86Application", "..\GT86A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GT86Domain", "..\GT86Domain\GT86Domain.csproj", "{3D95828A-CA19-4BB8-A166-F04A2EC8563A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT86Service", "..\GT86Service\GT86Service.csproj", "{2FE78683-9F63-4B4F-A058-F669D99C3016}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{3D95828A-CA19-4BB8-A166-F04A2EC8563A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D95828A-CA19-4BB8-A166-F04A2EC8563A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D95828A-CA19-4BB8-A166-F04A2EC8563A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE78683-9F63-4B4F-A058-F669D99C3016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE78683-9F63-4B4F-A058-F669D99C3016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE78683-9F63-4B4F-A058-F669D99C3016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE78683-9F63-4B4F-A058-F669D99C3016}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
