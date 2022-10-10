@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GT86DB", "GT86DB.sqlproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GT86Application", "..\GT86Application\GT86Application.csproj", "{3648FB90-674C-425F-9E45-9E4C51F98C3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT86Domain", "..\Domain\GT86Domain.csproj", "{05CC6CD1-C1AB-42A3-A863-DAE4B8D6A894}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GT86Domain", "..\Domain\GT86Domain.csproj", "{05CC6CD1-C1AB-42A3-A863-DAE4B8D6A894}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
