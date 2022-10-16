@@ -17,9 +17,8 @@
         public string Overpipe => "Overpipe";
         public string Front_Pipe => "Front Pipe";
         public string Exhaust_Garnish => "Exhaust Garnish";
-        public string Resonator => "Resonator";
+        public string Downpipe => "Downpipe";
         public string Muffler => "Muffler";
-        public string Cat_Pipe => "Cat_Pipe";
 
         /*
          *

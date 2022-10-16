@@ -4,25 +4,20 @@
     {
         /*
          * 
-         * Fog Lights
+         * Rear Lights
          * 
          */
         public string Rear_Fog_Lights => "Rear Fog Lights";
-        public string Front_Fog_Lights => "Front Fog Lights";
+        public string Tail_Lights => "Taillights";
 
         /*
          * 
-         * Head Lights
+         * Front Bumper Lights
          * 
          */
         public string Head_Lights => "Headlights";
-
-        /*
-         * 
-         * Tail Lights
-         * 
-         */
-        public string Tail_Lights => "Taillights";
+        public string DRL_Lights => "DRL Lights";
+        public string Front_Indicator_Lights => "Front Indicator Lights";
 
         /*
          * 
@@ -52,6 +47,7 @@
          * 
          */
         public string Headlight_Level_Sensor => "Headlight Level Sensor";
+        public string Indicator_Module => "Indicator Module";
 
         /*
          * 

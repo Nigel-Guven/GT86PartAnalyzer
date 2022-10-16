@@ -20,7 +20,17 @@
       "ProjectGuid": "61c62571-161b-4eb6-9b74-49a9b53e21b0",
       "DisplayName": "GT86Service",
       "ColorIndex": 3
+    },
+    "2fe78683-9f63-4b4f-a058-f669d99c3016": {
+      "ProjectGuid": "2fe78683-9f63-4b4f-a058-f669d99c3016",
+      "DisplayName": "GT86Service",
+      "ColorIndex": 4
+    },
+    "3d95828a-ca19-4bb8-a166-f04a2ec8563a": {
+      "ProjectGuid": "3d95828a-ca19-4bb8-a166-f04a2ec8563a",
+      "DisplayName": "GT86Domain",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }
