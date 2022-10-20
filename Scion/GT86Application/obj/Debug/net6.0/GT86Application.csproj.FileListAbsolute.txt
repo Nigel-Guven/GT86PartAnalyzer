@@ -1,0 +1,12 @@
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\bin\Debug\net6.0\GT86Application.deps.json
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\bin\Debug\net6.0\GT86Application.dll
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\bin\Debug\net6.0\GT86Application.pdb
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.csproj.AssemblyReference.cache
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.GeneratedMSBuildEditorConfig.editorconfig
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.AssemblyInfoInputs.cache
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.AssemblyInfo.cs
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.csproj.CoreCompileInputs.cache
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.dll
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\refint\GT86Application.dll
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.pdb
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\ref\GT86Application.dll

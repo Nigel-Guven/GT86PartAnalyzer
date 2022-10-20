@@ -1,0 +1,235 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>cda40ab2-97e5-404c-8445-1d6ea1cc3400</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>GT86WebScraping\WebScraping\TRCTuning\trc_tuning_html_cleaner.py</StartupFile>
+    <SearchPath>GT86WebScraping\Extensions</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>GT86PythonWebCrawler</Name>
+    <RootNamespace>GT86PythonWebCrawler</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GT86WebScraping\Extensions\ExceptionsEx.py" />
+    <Compile Include="GT86WebScraping\Extensions\SupportFunctionsEx.py" />
+    <Compile Include="GT86WebScraping\Extensions\WebScrapingEx.py" />
+    <Compile Include="GT86WebScraping\Extensions\__ init __.py" />
+    <Compile Include="GT86WebScraping\Extensions\__pycache__\class1.py" />
+    <Compile Include="GT86WebScraping\Packages\get-pip.py" />
+    <Compile Include="GT86WebScraping\WebScraping\DriftShop\driftshop_html_cleaner.py" />
+    <Compile Include="GT86WebScraping\WebScraping\DriftShop\driftshop_parent_web_scraper.py" />
+    <Compile Include="GT86WebScraping\WebScraping\Fensport\fensport_html_cleaner.py" />
+    <Compile Include="GT86WebScraping\WebScraping\Fensport\fensport_parent_web_scraper.py" />
+    <Compile Include="GT86WebScraping\WebScraping\GroupD\groupd_html_cleaner.py" />
+    <Compile Include="GT86WebScraping\WebScraping\GroupD\groupd_parent_web_scraper.py" />
+    <Compile Include="GT86WebScraping\WebScraping\TRCTuning\trc_tuning_html_cleaner.py" />
+    <Compile Include="GT86WebScraping\WebScraping\TRCTuning\trc_tuning_parent_web_scraper.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GT86WebScraping\" />
+    <Folder Include="GT86WebScraping\Extensions\" />
+    <Folder Include="GT86WebScraping\Extensions\__pycache__\" />
+    <Folder Include="GT86WebScraping\HTML\" />
+    <Folder Include="GT86WebScraping\HTML\ProcessedHTML\" />
+    <Folder Include="GT86WebScraping\HTML\RawHTML\" />
+    <Folder Include="GT86WebScraping\HTML\RawHTML\DriftShop\" />
+    <Folder Include="GT86WebScraping\HTML\RawHTML\FenSport\" />
+    <Folder Include="GT86WebScraping\HTML\RawHTML\GroupD\" />
+    <Folder Include="GT86WebScraping\HTML\RawHTML\TRCTuning\" />
+    <Folder Include="GT86WebScraping\Packages\" />
+    <Folder Include="GT86WebScraping\WebScraping\" />
+    <Folder Include="GT86WebScraping\WebScraping\DriftShop\" />
+    <Folder Include="GT86WebScraping\WebScraping\Fensport\" />
+    <Folder Include="GT86WebScraping\WebScraping\GroupD\" />
+    <Folder Include="GT86WebScraping\WebScraping\TRCTuning\" />
+    <Folder Include="GT86WebScraping\WebScraping\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GT86WebScraping\Extensions\__pycache__\Exceptions.cpython-310.pyc" />
+    <Content Include="GT86WebScraping\Extensions\__pycache__\ExceptionsEx.cpython-310.pyc" />
+    <Content Include="GT86WebScraping\Extensions\__pycache__\ScriptFunctions.cpython-310.pyc" />
+    <Content Include="GT86WebScraping\Extensions\__pycache__\SupportFunctionsEx.cpython-310.pyc" />
+    <Content Include="GT86WebScraping\Extensions\__pycache__\WebScrapingEx.cpython-310.pyc" />
+    <Content Include="GT86WebScraping\HTML\ProcessedHTML\driftshop_content.csv" />
+    <Content Include="GT86WebScraping\HTML\ProcessedHTML\fensport_content.csv" />
+    <Content Include="GT86WebScraping\HTML\ProcessedHTML\groupd_content.csv" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_053379de-d586-4c24-bab8-d25dc98885ce.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_06eeb9a4-dbf8-4793-9f55-8509764c2da2.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_0c20e2cc-2071-4ab2-8377-ec2466346487.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_0d68db25-3a19-4079-8fda-a6b82db89717.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_115c9692-cb39-4fae-ad84-8d9f9784f538.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_11804021-fd55-45d5-95be-94e1d63e3af6.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_12f3c8c4-232c-46cf-b37c-f9a17f6553f9.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_131507a6-9950-416a-bb69-397107589761.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_1325f58c-530e-41b0-b756-bdb7cd59c593.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_198b8587-9a87-4b52-a20b-f4349e9c383a.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_1a299f63-cf91-470f-9c98-1b23da1b921d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_223fdaef-180b-4d1d-848f-226752c7ca3f.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_249efa1d-1164-4dc9-ba2e-8f634263e523.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_25405f9c-753a-4527-aa3c-193d6816a864.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_28672ce5-3631-4eca-96c3-e15c47133d73.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_28f6a4d0-de73-433b-9af7-e680b196a189.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_29828b76-5cf6-4e9f-83cf-bdb06d05d555.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_2ca8e6be-6a98-4317-9198-6ecc47adfc85.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_2f0d7d5a-a30a-4098-ac9b-ceaf2ae55d25.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_2fa9dcec-32a2-4758-8147-6324c5c4d2f7.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_312377ac-c2c9-4630-92b6-db0998ae245f.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_36c73432-766f-43fb-adc5-63369391c034.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_382e0284-e43e-4e89-8c41-559d9026031e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_38a457b6-1201-489b-bccd-3515710b6ede.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_396bb23a-bb03-409f-83d7-9a0ca3dfb3b1.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_3a09b5f0-b287-4042-8832-55d9b7bcc608.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_3b113b86-dbe6-4b75-9baf-1b5d12b1bd96.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_3bea5f18-56c3-4136-9ba4-fcad522f4ba2.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_3c3909ba-b5fa-4b9d-8544-c742e3f0810d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_3cf491ee-d71a-4eee-9cd0-6020a358698e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_3d350a11-7aef-4387-aabf-e99a0834ba4f.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_408106b1-6d42-42c2-91f0-22c0015a54df.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_4563c3fb-c438-4f76-8a4d-7d659d195cda.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_4a2bd896-f6d5-4b92-ac67-d1f1f1874e34.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_4c77ae6a-ed6c-4800-a3ab-44948c873087.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_4c8e0f28-7813-4d9e-8afb-b462afd3a89d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_4dbbb070-2415-4835-9c28-79539f3d0bdf.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_4e4a652d-688b-4dbc-b5f6-a542751b8769.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_4fdc4fdd-5d50-45e6-a292-905033040fbb.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_50b0a147-ad8e-46cc-924c-95337f47b320.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_53526f8c-cd0d-47ab-83c7-b77bcb1c8a65.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_56687ab0-c242-4f1a-8304-67aff4b36b62.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5696b338-4657-4a28-8d07-6f56407d90d3.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_58b20601-b30b-4ba3-ad29-ad0c801c58e1.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_595431a2-bec6-458a-9b19-8d3088080006.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_59543653-59f7-429a-aaf7-ac84900486ab.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5a60023b-7e61-46e8-9a99-d551a47bb2e6.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5b6c2b6d-49a7-4e3f-8f26-1b939bdc2e78.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5b6f516b-ac91-4ea5-8e6a-e93b2838e1b2.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5d627c87-2b88-467c-b779-8879a442297b.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5d6fbfb7-294a-4d13-af30-96f455a2657d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5dfc2ade-fbf7-4c47-8d22-b3a2796d4329.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_5e4180a3-ca7c-4779-af53-6fb618e40f88.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_601b3840-b0db-4e43-b59c-26a91935f534.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_627aee54-f6fb-4207-8fff-c9372f274f2b.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_62eae508-8911-4015-b284-8ba4c73897b8.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_63a881f9-c412-42ae-b066-ada3bfa073b8.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_647db4ac-c1d6-4f88-ad39-f551c72368a0.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_651369ba-9341-4a8c-8230-799454abae6d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_659c1e21-3984-4f8e-9068-522733b37f19.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_66937c63-853b-40d7-b6de-7dae9e2a8a5a.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_677af8f6-443f-468c-9744-e91343f0e3f5.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_6788254c-04d4-43da-a576-a3f437bf8d84.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_6883dac1-c57e-420d-ac40-a3412c5ef3ab.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_6a519621-6f05-4db1-b155-472ee87bf0de.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_6ac576df-fa39-488e-a05f-5b0505da4723.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_6f1b85ef-fdd4-4ebc-a242-451ca21a3e6f.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7131c333-caeb-4e51-aff0-9bee749fd260.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7194ae61-1431-4e31-9b1f-ef7d41bc24b1.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_73c1f9d7-1753-40a2-8bf8-587fe3bfb583.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_74176417-ad2e-4c30-b93d-babd9925080d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7717d663-b20a-4eba-bed4-8fb3192f51ab.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7acf5aae-e1e5-4b90-96c0-70812e221658.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7c58540e-3b8c-4679-a62a-a45b8fe1e25f.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7d7ef437-8702-403d-b78f-0919e47937a8.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7d8bd248-edaa-4e7c-bcbf-164d0ae39001.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7e71cd93-92a3-41ae-ac08-3e8fcbfe20fa.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_7e885c0f-c89f-4ec2-b446-83419a66a444.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_80db4713-9323-45a8-8a92-d55133b75e7e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_84cbf0ff-fb4f-4fec-96f1-11969ab1863e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_8553678c-dcb3-4446-a356-9789a0b1a1e9.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_8582580e-45a7-4e09-8545-516eea9257ea.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_887e8005-f280-42ef-b3b2-9412380dbd05.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_88a0914d-7b26-4699-9c34-eabe59ab5ee7.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_88ac3696-d758-486b-b452-899b65f8aebe.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_8acf70c2-766e-41de-b991-2ae6a1ee815a.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_8c7b3600-65bf-4916-bc2d-b50f36fb7ee1.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_90177fd5-eeaa-4f40-a614-f20a15af1442.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_94fea424-fc70-4d50-aaf9-3c3dcea6d2b5.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_968e4a91-938b-4ca3-a7fa-732882da0ef7.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_977e5274-7c2c-4bc6-bdc7-1cf17cfdd1c4.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_99460342-96f1-4449-a8ba-970493ec5bdd.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_9c44be86-fbf4-4a60-a150-1d4561d46f98.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_9c59f6e3-5e00-44df-b9ad-608b1338bce3.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_a1a71776-9f25-401e-a805-7ed177420ed2.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_a1f87205-08a0-4d45-b87a-bb14e0ab64f9.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_a25268b6-593b-41e4-9b1a-04e3af3be13c.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_a60c08dc-ab9c-4c21-b076-9aea34dd3e88.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_a681aadf-13cf-4e16-96ca-7ddb0b2875be.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_a96db9bd-acb6-4400-9f0c-15e85db3149f.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_a9f743d1-1c6f-4d1f-9781-e2238339ba3f.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_aa14cbb6-6b80-4e89-9df9-52d9467c161d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ab04c108-a96b-41f3-a246-16e1fcbb3e7e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ac3c8465-d452-4e49-9672-f46f64873368.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ac6a585b-5adf-41d1-8582-4753faef7e0b.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ace56fb9-8b03-4161-8583-003f1dd14661.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_add26e98-340a-4eaa-ad5c-977cebf189af.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_aef35cd7-243f-4514-ba60-854b42de6b72.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_af1efead-4389-42d0-b53a-c60abafd7b69.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_b01c1439-432e-4510-b805-9bba3648ac2d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_b24de751-634f-4b91-9ae7-e808be601172.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_b5c590f9-3c0b-484f-ad47-7c820fcbf127.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_b653ebec-2374-4149-b392-79ecf81b3a73.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_b9840d01-28a7-44bf-94cd-beb66dbb1956.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_b9996dfa-39b4-423c-8eac-603ffae164d6.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ba5a6f97-c4a6-4c2e-b6d3-2f07f1c36f25.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_bbc205d5-3106-48bd-a8c7-b393fe50e441.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_bc408594-ae64-4b95-8390-4dc3c2753c52.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_bd25b46a-0be8-4ca4-8f1f-b6e4ed060de0.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_bd56f9b7-a06a-4e30-81a1-cea18a58c20d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_bf5fa217-dbd9-46b6-bf5e-2191cba16d79.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_c1ae62dd-e06e-4676-9793-936823443051.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_cbe35632-a040-4725-9842-735aad737bb6.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_cc9f91e8-0557-4cea-a893-45fc25e6c5dd.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_cca55291-b8b5-442e-9692-306f3ddd3057.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_cd9f4452-2280-4836-82d7-1c422e1b9daa.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_d08dfc9c-16aa-42ed-82c2-422c89e70a51.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_d54eb62f-0a09-4c81-bf6a-1de964e444c0.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_d85502d7-ef6c-4451-a144-170bab5f6e4d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_d8a07c37-4af1-464d-b539-7fa28a5b4833.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_dbc711d0-710c-4e03-8f3d-bffb6088af71.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ddb26876-a587-465d-b621-78cbbb311571.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_dfc526a4-9109-412f-bfb6-c68cc358e86d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_e0a6c1fa-f12c-4798-91af-649487efa80b.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_e12f16ef-c6cc-4a55-9d7a-63dc9d333f3e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_e2d360fd-23b6-4606-9756-fcc8138ee5dd.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_e4d55ca9-f5b5-467e-ac87-ef7c2cb1eba8.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_e4d668bf-9d74-4d0b-a8e2-1c3b1c643ca6.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_e50e64bd-a923-4ca0-b335-e14522aad49d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_e744ab66-d48b-47b2-bfd2-ef65f461beae.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_eb870565-d61a-456c-9b47-d0910a30ff9e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ebb6ac71-9d42-4279-9328-2caa47bfbe76.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ec7a37ef-a38b-4985-946c-d8cbc33cc803.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ec7a4c73-a2da-4727-b08f-55fa3384c635.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ee1df0a5-9b46-4b48-b118-f9d67d23b964.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_f0e7bc8a-f45d-4b1b-82b1-740002485747.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_f0faf680-dda8-4c30-97c3-15acd082caf5.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_f35466b7-ffd1-4f43-86c1-c0151da87bcb.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_f5ad9c29-958b-4132-9f90-5d699fb1f1da.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_f6b47e2b-dd55-4402-8aaf-a69cf1e141f1.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_f79a6ca5-8522-4fc3-9a3f-0c1b4506016e.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_f88bae3b-04b8-4d28-a1e2-3149bcc4a500.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_fb6ac94f-fcb0-43f1-b9ab-f235656b5a7d.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_fc68928d-2d97-405e-a6c4-d4d929a91fe1.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_fc6a1637-bd9b-4d22-b0f7-66b8e83be584.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_fd60bc23-a1f7-4b95-a23d-d2a18709ada0.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ff7c37f5-2d1f-4b53-bd4b-2b6ab5bdc861.html" />
+    <Content Include="GT86WebScraping\HTML\RawHTML\TRCTuning\content_ffd0ff20-0070-42ee-84b1-e8f6dbebc7f6.html" />
+    <Content Include="GT86WebScraping\WebScraping\__pycache__\classes.cpython-310.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -15,7 +15,7 @@
          * 
          */
         public string Front_Anti_Roll_Bar => "Front Anti-Roll Bar";
-        public string Rear_Anti_Roll_Bar => "Rear Anti-Roll Bar"
+        public string Rear_Anti_Roll_Bar => "Rear Anti-Roll Bar";
 
         /*
          * 
