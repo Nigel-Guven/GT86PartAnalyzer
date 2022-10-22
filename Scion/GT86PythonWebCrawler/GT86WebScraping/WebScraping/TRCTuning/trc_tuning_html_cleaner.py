@@ -39,24 +39,24 @@ def main():
                 )
 
                 soup = BeautifulSoup(tmpFile, 'html.parser')
-                print(soup)
-                '''
+                
                 #title
                 dirty_product_title = str(soup.find_all("meta", property="og:title"))
                 clean_product_title = cleanTitle(dirty_product_title)
-
+                
+                
                 #price
-                dirty_product_price = str(soup.find_all("meta", property="og:price:amount"))
+                dirty_product_price = str(soup.find_all("div", class_="current-price-container"))
                 clean_product_price = cleanPrice(dirty_product_price)
-
+                
                 #stock
-                clean_product_in_stock = "Preorder Only" 
-
+                clean_product_in_stock = "In_Stock" 
+                
                 #notes
-                clean_product_notes = cleanNotes(clean_product_title)
-
+                clean_product_notes = "No notes available"
+                
                 #description
-                dirty_product_description = str(soup.find_all("meta", property="og:description"))
+                dirty_product_description = str(soup.find_all("div", class_="tab-body active"))
                 clean_product_description = cleanDescription(dirty_product_description)
                 if dirty_product_description.__contains__("[]"):
                     clean_product_description = clean_product_title
@@ -65,14 +65,14 @@ def main():
                 rows.append([clean_product_title, clean_product_price, '', clean_product_description, clean_product_notes, clean_product_in_stock, clean_product_supplier])
                 tmpFile.close()
                 os.remove(path)
-                ''' 
+                
     except UnicodeDecodeError:
         pass  
-    '''
+    
     # Open new file and fill contents 
     supportFuncs.switchToProcessedPath(processed_html_directory)
     
-    file_name = "groupd_content.csv" 
+    file_name = "trc_tuning_content.csv" 
   
     file = open(file_name,'a+', encoding='latin1', errors='ignore', newline='')   
     csvwriter = csv.writer(file) 
@@ -84,7 +84,41 @@ def main():
         csvwriter.writerow(row)
         
     file.close()  
-    '''
+    
+
+def cleanTitle(text): 
+    text = text.replace("&amp;","&")
+    text = text.replace("EUR","")
+    text = text.replace("[<meta content=\"","").replace("\" property=\"og:title\"/>]","").strip()  
+    return text
+
+def cleanPrice(text):
+    text = scrapeFuncs.remove_html_markup(text)
+    text = text.replace("[","").replace("]","")
+    text = text.replace("Your price","").replace("Our standard price","").strip()
+    text = text.replace("per set","").strip()
+    text = text.replace("per piece(s)","").strip()
+    text = text.replace("per pairs","").strip()
+    text = text.replace("EUR","")
+    text = text.strip()
+    text = priceFormatter(text)
+    if(text.count(".")>1):
+        text = text.split[1]
+        return text
+    return text
+
+def priceFormatter(text): 
+    text = text.replace(",","d")   
+    text = text.replace(".","c")
+    text = text.replace("d",".")
+    text = text.replace("c",",")
+    return text
+    
+def cleanDescription(text): 
+    text = text.replace("[","").replace("]","")
+    text = scrapeFuncs.remove_html_markup(text).strip()   
+    text = text.replace("&amp;","&")
+    return text
     
 if __name__=="__main__":
 	main()
