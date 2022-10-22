@@ -1,16 +1,13 @@
 import os
-import re
-import sys
 import csv
 
 from bs4 import BeautifulSoup
-
-sys.path.insert(0, 'PythonScripts\\Extensions')
+os.getcwd()
 
 try:
-    import ExceptionsEx as exceptions 
-    import WebScrapingEx as scrapeFuncs
-    import SupportFunctionsEx as supportFuncs
+    import GT86WebScraping.Extensions.ExceptionsEx as exceptions
+    import GT86WebScraping.Extensions.SupportFunctionsEx as supportFuncs
+    import GT86WebScraping.Extensions.WebScrapingEx as scrapeFuncs
 except ModuleNotFoundError:
     os.getcwd()
 
@@ -25,9 +22,8 @@ def main():
     bundleDescriptionItems = []
     bundleNotesItems = []
 
-
-    raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\' + clean_product_supplier
-    processed_html_directory = r'PythonScripts\\HTML\\ProcessedHTML'
+    raw_html_directory = r'GT86WebScraping\\HTML\\RawHTML\\' + clean_product_supplier
+    processed_html_directory = r'GT86WebScraping\\HTML\\ProcessedHTML'
 
     # Create Directories
     try:

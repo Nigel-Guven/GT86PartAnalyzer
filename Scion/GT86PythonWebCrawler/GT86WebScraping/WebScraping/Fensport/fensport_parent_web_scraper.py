@@ -1,12 +1,13 @@
-import os
-import sys
 import uuid
+import os
 from bs4 import BeautifulSoup
 from requests import get
-sys.path.insert(0, 'PythonScripts\\Extensions')
 
-import ExceptionsEx as exceptionsEx
-import SupportFunctionsEx as supportFuncs
+try:
+    import GT86WebScraping.Extensions.ExceptionsEx as exceptionsEx
+    import GT86WebScraping.Extensions.SupportFunctionsEx as supportFuncs
+except ModuleNotFoundError:
+    os.getcwd()
 
 def main():
 

@@ -1,13 +1,13 @@
-from operator import contains
-import os
-import sys
 import uuid
+import os
 from bs4 import BeautifulSoup
 from requests import get
-sys.path.insert(0, 'PythonScripts\\Extensions')
 
-import ExceptionsEx as exceptionsEx
-import SupportFunctionsEx as supportFuncs
+try:
+    import GT86WebScraping.Extensions.ExceptionsEx as exceptionsEx
+    import GT86WebScraping.Extensions.SupportFunctionsEx as supportFuncs
+except ModuleNotFoundError:
+    os.getcwd()
 
 def main():
 
@@ -15,7 +15,7 @@ def main():
  
     user_agent_headers = {"User-Agent":"Mozilla/5.0"}
     clean_product_supplier = "TRCTuning"
-    raw_html_directory = r'PythonScripts\\HTML\\RawHTML\\' + clean_product_supplier
+    raw_html_directory = r'GT86WebScraping\\HTML\\RawHTML\\' + clean_product_supplier
     
 # Check that files are being outputted to the correct directory
 
