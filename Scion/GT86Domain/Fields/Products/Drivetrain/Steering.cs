@@ -1,4 +1,4 @@
-﻿namespace GT86Domain.Fields
+﻿namespace GT86Domain.Fields.Products.Drivetrain
 {
     public class Steering
     {
