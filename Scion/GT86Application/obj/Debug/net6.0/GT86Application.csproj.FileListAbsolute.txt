@@ -10,3 +10,6 @@ B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86A
 B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\refint\GT86Application.dll
 B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.pdb
 B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\ref\GT86Application.dll
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\bin\Debug\net6.0\GT86Domain.dll
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\bin\Debug\net6.0\GT86Domain.pdb
+B:\Documents\My Github\GT86Analyzer\Scion\GT86Application\obj\Debug\net6.0\GT86Application.csproj.CopyComplete

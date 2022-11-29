@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "GT86Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GT86Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GT86Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GT86Domain/1.0.0": {
+      "type": "project",
+      "path": "../GT86Domain/GT86Domain.csproj",
+      "msbuildProject": "../GT86Domain/GT86Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "GT86Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\nigel\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "B:\\Documents\\My Github\\GT86Analyzer\\Scion\\GT86Domain\\GT86Domain.csproj": {
+              "projectPath": "B:\\Documents\\My Github\\GT86Analyzer\\Scion\\GT86Domain\\GT86Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

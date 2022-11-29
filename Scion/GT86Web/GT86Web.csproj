@@ -34,6 +34,45 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="fonts\dash_horizon\Dashhorizon-eZ5wg.otf" />
+    <None Include="fonts\roboto\Roboto-Black.ttf" />
+    <None Include="fonts\roboto\Roboto-BlackItalic.ttf" />
+    <None Include="fonts\roboto\Roboto-Bold.ttf" />
+    <None Include="fonts\roboto\Roboto-BoldItalic.ttf" />
+    <None Include="fonts\roboto\Roboto-Italic.ttf" />
+    <None Include="fonts\roboto\Roboto-Light.ttf" />
+    <None Include="fonts\roboto\Roboto-LightItalic.ttf" />
+    <None Include="fonts\roboto\Roboto-Medium.ttf" />
+    <None Include="fonts\roboto\Roboto-MediumItalic.ttf" />
+    <None Include="fonts\roboto\Roboto-Regular.ttf" />
+    <None Include="fonts\roboto\Roboto-Thin.ttf" />
+    <None Include="fonts\roboto\Roboto-ThinItalic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="car_about.html" />
+    <Content Include="car_blog.html" />
+    <Content Include="car_gallery.html" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\dash_horizon\info.txt" />
+    <Content Include="fonts\dash_horizon\misc\READ-LICENSE-FIRST.html" />
+    <Content Include="fonts\roboto\LICENSE.txt" />
+    <Content Include="images\gt86_howth_hill.png" />
+    <Content Include="images\gt86_logo.png" />
+    <Content Include="images\my_toyota_86.jpg" />
+    <Content Include="images\scion_logo.png" />
+    <Content Include="images\subaru_logo.png" />
+    <Content Include="images\toyota_logo.png" />
+    <Content Include="index.html" />
+    <Content Include="parts\body.html" />
+    <Content Include="parts\braking.html" />
+    <Content Include="parts\chassis.html" />
+    <Content Include="parts\drivetrain.html" />
+    <Content Include="parts\engine_bay.html" />
+    <Content Include="parts\exhaust.html" />
+    <Content Include="parts\fluids.html" />
+    <Content Include="parts\suspension.html" />
+    <Content Include="parts\technology.html" />
+    <Content Include="parts\wheels.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

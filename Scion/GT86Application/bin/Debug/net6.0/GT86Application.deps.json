@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "GT86Application/1.0.0": {
+        "dependencies": {
+          "GT86Domain": "1.0.0"
+        },
         "runtime": {
           "GT86Application.dll": {}
+        }
+      },
+      "GT86Domain/1.0.0": {
+        "runtime": {
+          "GT86Domain.dll": {}
         }
       }
     }
   },
   "libraries": {
     "GT86Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GT86Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

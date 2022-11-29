@@ -1,4 +1,6 @@
-﻿namespace GT86Domain.Fields
+﻿using System.Security.Principal;
+
+namespace GT86Domain.Fields
 {
     public class BodyKit
     {
@@ -42,5 +44,6 @@
         public string Aero_Stabilising_Cover => "Rear Aero Stabilising Cover";
         public string Front_Canards => "Front Canards";
         public string Rear_Canards => "Rear Canards";
+        public string Wind_Deflectors => "Wind Deflectors";
     }
 }

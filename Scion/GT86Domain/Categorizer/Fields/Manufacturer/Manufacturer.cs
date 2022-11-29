@@ -1,4 +1,6 @@
-﻿namespace GT86Domain.Fields
+﻿using System.Xml.Linq;
+
+namespace GT86Domain.Fields
 {
     public class Manufacturer
     {
@@ -100,5 +102,10 @@
         public string Deatschworks => "Deatschworks";
         public string Nitron => "Nitron";
         public string Motul => "Motul";
+        public string SK_Import => "SK Import";
+        public string Continental => "Continental";
+        public string Hardrace => "Hardrace";
+        public string Hic => "Hic";
+        public string Japan_Racing => "Japan Racing";
     }
 }

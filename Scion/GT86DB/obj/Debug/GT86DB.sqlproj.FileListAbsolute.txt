@@ -4,3 +4,7 @@ B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\bin\Debug\GT86DB.pdb
 B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\obj\Debug\GT86DB.sqlproj.AssemblyReference.cache
 B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\obj\Debug\GT86DB.dll
 B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\obj\Debug\GT86DB.pdb
+B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\obj\Debug\Model.xml
+B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\obj\Debug\refactor.xml
+B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\obj\Debug\postdeploy.sql
+B:\Documents\My Github\GT86Analyzer\Scion\GT86DB\obj\Debug\predeploy.sql

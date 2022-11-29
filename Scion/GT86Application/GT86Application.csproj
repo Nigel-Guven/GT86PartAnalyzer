@@ -10,4 +10,8 @@
     <Folder Include="Categorizer\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GT86Domain\GT86Domain.csproj" />
+  </ItemGroup>
+
 </Project>
