@@ -28,6 +28,10 @@
 	font-family: "Roboto";
 }
 
+html, body {
+    height:100%;
+}
+
 .header {
 	text-align: center;
 	background: #000;
@@ -55,6 +59,7 @@
 .wrapper .header_nav .left{
 	display: flex;
 	align-items: center;
+	font-size: 16px;
 }
 
 .wrapper .header_nav .left .brand_name p{
@@ -78,6 +83,7 @@
 
 .wrapper .header_nav .right ul li{
 	margin: 0 12px;
+	font-size: 16px;
 }
 
 .wrapper .parts_nav{
