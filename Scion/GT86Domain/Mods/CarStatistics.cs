@@ -45,7 +45,8 @@ namespace GT86Domain.Mods
                 new Modification(wheels.Alloy_Wheels, manufacturer.Japan_Racing, 2, 0.0, 0.0, 0.0, 0.0, 0.0),
                 new Modification(strengthening.Front_Strut_Brace, manufacturer.Blitz, 1, 0.0, 0.1, 0.0, 0.0, 0.1),
                 new Modification(airIntake.Air_Intake_Kit, manufacturer.SK_Import, 9, 0.1, 0.0, 0.1, 0.2, 0.0),
-                new Modification(wheels.Tyres, manufacturer.Continental, 22, 0.0, 0.1, 0.1, 0.0, 0.2)
+                new Modification(wheels.Tyres, manufacturer.Continental, 22, 0.0, 0.1, 0.1, 0.0, 0.2),
+                new Modification(bodyKit.Roof_Spoiler, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0)
             };
 
             var totalScore = 0;
