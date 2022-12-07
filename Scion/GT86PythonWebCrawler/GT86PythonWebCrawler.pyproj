@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>cda40ab2-97e5-404c-8445-1d6ea1cc3400</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GT86WebScraping\WebScraping\TRCTuning\trc_tuning_html_cleaner.py</StartupFile>
+    <StartupFile>GT86WebScraping\WebScraping\TorqueGT\torque_gt_parent_web_scraper.py</StartupFile>
     <SearchPath>GT86WebScraping\Extensions</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -32,6 +32,8 @@
     <Compile Include="GT86WebScraping\WebScraping\Fensport\fensport_parent_web_scraper.py" />
     <Compile Include="GT86WebScraping\WebScraping\GroupD\groupd_html_cleaner.py" />
     <Compile Include="GT86WebScraping\WebScraping\GroupD\groupd_parent_web_scraper.py" />
+    <Compile Include="GT86WebScraping\WebScraping\TorqueGT\torque_gt_html_cleaner.py" />
+    <Compile Include="GT86WebScraping\WebScraping\TorqueGT\torque_gt_parent_web_scraper.py" />
     <Compile Include="GT86WebScraping\WebScraping\TRCTuning\trc_tuning_html_cleaner.py" />
     <Compile Include="GT86WebScraping\WebScraping\TRCTuning\trc_tuning_parent_web_scraper.py" />
   </ItemGroup>
@@ -51,6 +53,7 @@
     <Folder Include="GT86WebScraping\WebScraping\DriftShop\" />
     <Folder Include="GT86WebScraping\WebScraping\Fensport\" />
     <Folder Include="GT86WebScraping\WebScraping\GroupD\" />
+    <Folder Include="GT86WebScraping\WebScraping\TorqueGT\" />
     <Folder Include="GT86WebScraping\WebScraping\TRCTuning\" />
     <Folder Include="GT86WebScraping\WebScraping\__pycache__\" />
   </ItemGroup>
