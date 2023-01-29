@@ -38,27 +38,35 @@ def main():
     if response.status_code == 200:
         parent_url_soup = BeautifulSoup(response.text, 'html.parser')
             
-        for child in parent_url_soup.find_all('a', href = True):      
+        for child in parent_url_soup.find_all('a', href = True):
             if str(child).__contains__("https://www.torque-gt.co.uk/jdm-parts/select-car/toyota/gt86/"):
-                item_response = 
-                
-                
-                response = get(page_header + child['href'], headers = user_agent_headers)
-
+            
 # Open new file and fill contents
-                child_url_soup = BeautifulSoup(response.text, 'html.parser')
-                newGuid = str(uuid.uuid4())
-                file_name = "content_" + newGuid + ".html"      
-                print(file_name)
-                    
-                f = open(
-                file_name, 
-                "w", 
-                encoding = "utf-8")
+                
 
-                f.write(str(child_url_soup))
-                f.close()
-                  
+                child_response = get(child['href'], headers = user_agent_headers)
+                child_url_soup = BeautifulSoup(child_response.text, 'html.parser')
+                
+                
+                items = str(child_url_soup.find_all("a", class_="product-item-link"))
+                items_soup = BeautifulSoup(items, 'html.parser')
+                for child_item in items_soup.find_all('a', href = True):
+                    print(child_item['href'])
+                    item_response = get(child_item['href'], headers = user_agent_headers)
+                    item_url_soup = BeautifulSoup(item_response.text, 'html.parser')
+                    
+                    newGuid = str(uuid.uuid4())
+                    file_name = "content_" + newGuid + ".html"      
+                    print(file_name)
+                    
+                    f = open(
+                    file_name, 
+                    "w", 
+                    encoding = "utf-8")
+
+                    f.write(str(item_url_soup))
+                    f.close()
+                    
     else:
         raise exceptionsEx.HTTPFaultException(response.status_code)
 
