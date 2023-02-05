@@ -39,40 +39,47 @@ def main():
                 )
 
                 soup = BeautifulSoup(tmpFile, 'html.parser')
+
                 
                 #title
-                dirty_product_title = str(soup.find_all("img", class="alt"))
-                print(dirty_product_title)
-                #clean_product_title = cleanTitle(dirty_product_title)
-                '''
+                dirty_product_title = str(soup.find_all("span", class_="base"))                          
+                clean_product_title = cleanTitle(dirty_product_title)
+                
+                
                 #price
-                dirty_product_price = str(soup.find_all("meta", property="og:price:amount"))
+                dirty_product_price = str(soup.find_all("span", class_="price"))
                 clean_product_price = cleanPrice(dirty_product_price)
-
+                
+                
                 #stock
-                clean_product_in_stock = "Preorder Only" 
-
+                dirty_product_stock = str(soup.find_all("span", class_="shiplines"))
+                clean_product_in_stock = checkStockLevels(dirty_product_stock)
+                
                 #notes
-                clean_product_notes = cleanNotes(clean_product_title)
-
+                dirty_product_notes = str(soup.find_all("div", class_="specific-desc desc-specification"))          
+                clean_product_notes = cleanNotes(dirty_product_notes)
+                print(clean_product_notes)
+                
                 #description
-                dirty_product_description = str(soup.find_all("meta", property="og:description"))
+                dirty_product_description = str(soup.find_all("div", class_="specific-desc desc-description"))
                 clean_product_description = cleanDescription(dirty_product_description)
-                if dirty_product_description.__contains__("[]"):
+                if clean_product_description.__contains__("[]"):
                     clean_product_description = clean_product_title
 
+                
                 # Add Item as it is parsed to list      
                 rows.append([clean_product_title, clean_product_price, '', clean_product_description, clean_product_notes, clean_product_in_stock, clean_product_supplier])
-                tmpFile.close()
-                os.remove(path)
-                  '''  
+                
+                #tmpFile.close()
+                #os.remove(path)
+                
     except UnicodeDecodeError:
-        pass  
-    '''
+        pass 
+    
     # Open new file and fill contents 
     supportFuncs.switchToProcessedPath(processed_html_directory)
 
-    file_name = "groupd_content.csv" 
+    file_name = "torque_gt.csv" 
   
     file = open(file_name,'a+', encoding='latin1', errors='ignore', newline='')   
     csvwriter = csv.writer(file) 
@@ -84,37 +91,46 @@ def main():
         csvwriter.writerow(row)
         
     file.close()  
-    '''
+    
 def cleanTitle(text): 
-    text = text.replace("[<meta content=\"","").replace("\" property=\"og:title\"/>]","").strip()  
+    text = text.replace("[","").replace("]","").strip()  
+    text = scrapeFuncs.remove_html_markup(text)
     text = text.replace("&amp;","&")
     return text
 
 def cleanPrice(text): 
-    text = text.replace("[<meta content=\"","").replace("\" property=\"og:price:amount\"/>]","").strip()   
+    text = text.replace("[","").replace("]","").strip()  
+    text = scrapeFuncs.remove_html_markup(text)   
     text = text.replace("&amp;","&")
     return text
 
 def cleanDescription(text): 
-    text = text.replace("[<meta content=\"","").replace("\" property=\"og:description\"/>]","").strip()   
-    text = text.replace("&amp;","&")
+    text = text.replace("[","").replace("]","").strip()  
+    text = scrapeFuncs.remove_html_markup(text) 
+    if text.__contains__("jquery"):
+        text = text[ 0 : text.index("require")]
+
+    text = text.replace("See Less...","").strip()
+    text = text.strip()
     return text
 
-def cleanNotes(text): 
-    if text.__contains__("ASNU Top Feed FA20"):
-        return "Material: Acetal OR Stainless Steel --- Size In CC: 300-1000"
-    elif text.__contains__("KAAZ 2 Way Super Q LSD GT86/BRZ"):
-        return "Super Q: Yes OR No"
-    elif text.__contains__("Toyota GT86 Zn6 (12+) RM Series"):
-        return "Spring Rates: 6/4kg.mm OR 6/6kg.mm /OR 8/8kg.mm"
-    elif text.__contains__("Toyota GT86 Zn6 (12+) BR Series"):
-        return "Spring Rates: 6/4kg.mm OR 5/5kg.mm /OR 8/8kg.mm OR 8/8kg.mm Extra Low OR 18/20kg.mm OR 10/8kg.mm OR 20/20kg.mm OR 8/6kg.mm OR 20/20kg.mm Extra Low OR 16/16kg.mm Extra Low OR 5/6kg.mm OR 10/9kg.mm"
-    elif text.__contains__("Toyota GT86 Zn6 (12+) ER Series"):
-        return "Spring Rates: 6/4kg.mm OR 8/6kg.mm Race Damping /OR 8/6kg.mm OR 10/8kg.mm OR 5/6kg.mm OR 10/8kg.mm Race Damping OR 7/8kg.mm OR 8/8kg.mm OR 10/6kg.mm"
-    elif text.__contains__("Toyota GT86 Zn6 (12+) ZR Series"):
-        return "Spring Rates: 6/4kg.mm OR 10/10kg.mm /OR 8/8kg.mm OR 10/8kg.mm OR 10/8kg.mm OR 5/6kg.mm"
+def cleanNotes(text):
+    if text != "":
+        text = text.replace("[","").replace("]","").strip()  
+        text = scrapeFuncs.remove_html_markup(text)  
+        text = text.strip()
+        return text
     else:
         return "No notes available"
+
+# helper functions
+def checkStockLevels(text):
+    if text.__contains__("Special order"):
+        return "Preorder Only"        
+    elif text.__contains__("In stock"):
+        return "In Stock"
+    else:
+        return "Not In Stock"
  
 if __name__=="__main__":
 	main()
