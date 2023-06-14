@@ -1,5 +1,4 @@
 ﻿using GT86Domain.Fields;
-using System.Security.Cryptography.X509Certificates;
 
 namespace GT86Domain.Mods
 {
@@ -46,7 +45,13 @@ namespace GT86Domain.Mods
                 new Modification(strengthening.Front_Strut_Brace, manufacturer.Blitz, 1, 0.0, 0.1, 0.0, 0.0, 0.1),
                 new Modification(airIntake.Air_Intake_Kit, manufacturer.SK_Import, 9, 0.1, 0.0, 0.1, 0.2, 0.0),
                 new Modification(wheels.Tyres, manufacturer.Continental, 22, 0.0, 0.1, 0.1, 0.0, 0.2),
-                new Modification(bodyKit.Roof_Spoiler, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0)
+                new Modification(bodyKit.Roof_Spoiler, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0),
+                new Modification(bodyKit.Rear_Brake_Kit, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0),
+                new Modification(bodyKit.Brake_Hoses, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0),
+                new Modification(bodyKit.Sandwich_Plate, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0),
+                new Modification(bodyKit.Oil_Temperature_Gauge, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0),
+                new Modification(bodyKit.Oil_Pressure_Gauge, manufacturer.SK_Import, 2, 0.0, 0.1, 0.0, 0.0, 0.0)
+
             };
 
             var totalScore = 0;
